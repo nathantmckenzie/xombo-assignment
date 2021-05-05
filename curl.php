@@ -12,7 +12,7 @@ curl_setopt($curl, CURLOPT_URL, $url1);
 // Return instead of outputting directly
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-// 3. Execute the request and fetch teh response. Check for errors.
+// 3. Execute the request and fetch the response. Check for errors.
 $output = curl_exec($curl);
 
 if ($e = curl_error($curl)) {
@@ -43,7 +43,7 @@ curl_setopt($ch, CURLOPT_URL, $url2);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 // POST request
 curl_setopt($ch, CURLOPT_POST, 1);
-// Adding the POST vairables to the request
+// Adding the POST variables to the request
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
 
 // 3. Execute the request and fetch the response. Check for errors.
